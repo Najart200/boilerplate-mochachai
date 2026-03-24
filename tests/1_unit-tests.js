@@ -6,7 +6,11 @@ suite('Unit Tests', function () {
     // #1
     test('#isNull, #isNotNull', function () {
       assert.isNull(null, 'This is an optional error description - e.g. null is null');
-      assert.isNull(1, '1 is not null');
+<<<<<<< HEAD
+      assert.isNotNull(1, '1 is not null');
+=======
+      assert.isNotNull(1, '1 is not null');
+>>>>>>> 40ea158a8d3ec31fda7750c10578b4959da53f99
     });
     // #2
     test('#isDefined, #isUndefined', function () {
