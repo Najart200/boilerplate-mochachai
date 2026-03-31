@@ -6,17 +6,13 @@ suite('Unit Tests', function () {
     // #1
     test('#isNull, #isNotNull', function () {
       assert.isNull(null, 'This is an optional error description - e.g. null is null');
-<<<<<<< HEAD
       assert.isNotNull(1, '1 is not null');
-=======
-      assert.isNotNull(1, '1 is not null');
->>>>>>> 40ea158a8d3ec31fda7750c10578b4959da53f99
     });
     // #2
     test('#isDefined, #isUndefined', function () {
-      assert.fail(null, 'null is not undefined');
-      assert.fail(undefined, 'undefined IS undefined');
-      assert.fail('hello', 'A string is not undefined');
+      assert.isDefined(null, 'null is not undefined');
+      assert.isUndefined(undefined, 'undefined IS undefined');
+      assert.isDefined('hello', 'A string is not undefined');
     });
     // #3
     test('#isOk, #isNotOk', function () {
